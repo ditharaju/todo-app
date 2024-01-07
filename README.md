@@ -1,4 +1,4 @@
-# TodoApp
+# TodoApp Task tracker - Using Angular 17 and TailwindCss
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
 
