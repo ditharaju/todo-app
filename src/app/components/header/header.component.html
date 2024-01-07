@@ -1,0 +1,14 @@
+<header class="block p-6 m-6 grid grid-cols-6 gap-4 sm:p-3.5 sm:mx-3.5 gap-4">
+    <h1
+        class="ml-4 col-start-1 col-end-6 sm:col-start-1 sm:col-end-3 mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl sm:text-2xl sm:ml-1 sm:px-0">
+        <fa-icon [icon]="faStickyNote" style="color: #78914b;" class="mr-4"></fa-icon>
+        {{title}}
+    </h1>
+    <app-button
+        [ngClass]="showAddTask
+    ? 'text-2xl text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-lg px-5 py-3.5 text-center ml-auto mb-2 col-start-1 col-end-7 sm:col-end-8 sm:col-span-2 sm:mr-1 sm:mb-1 font-bold sm:p-1 sm:m-1'
+    : 'text-2xl text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-lg px-5 py-3.5 text-center ml-auto mb-2 col-start-1 col-end-6 sm:col-end-7 sm:col-span-2 sm:mr-1 sm:mb-1 font-bold sm:p-1 sm:m-1'"
+        text="{{showAddTask ? 'Close' : 'Add a task'}}" (btnClick)="addButton()">
+    </app-button>
+
+</header>
